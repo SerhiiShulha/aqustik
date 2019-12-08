@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 800px;
+  background-color: $theme-color-blue;
+  background-image: url("../../../assets/images/headerBg.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+
+  @media only screen and (max-width: 575px) {
+    padding: 0;
+    height: 350px;
+    max-width: none;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15px;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    max-width: 800px;
+    font-size: 60px;
+    line-height: 80px;
+    font-family: $theme-font-black;
+
+    @media only screen and (max-width: 575px) {
+      margin-bottom: 0;
+      font-size: 22px;
+      line-height: 1.36;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: normal;
+
+    @media only screen and (max-width: 575px) {
+      margin-top: 15px;
+      font-size: 15px;
+      line-height: 1.47;
+    }
+  }
+}

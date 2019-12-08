@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &__img {
+    margin-right: 10px;
+  }
+
+  &__text {
+    font-family: $theme-font-bold;
+    font-size: 36px;
+    line-height: 40px;
+    color: $theme-color-white;
+  }
+}

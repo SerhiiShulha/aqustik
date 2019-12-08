@@ -1,0 +1,118 @@
+.slick-slider {
+  display: flex;
+  align-items: center;
+  margin-bottom: 55px;
+
+  &.slick-dotted {
+    margin-bottom: 55px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    position: relative;
+    left: auto;
+    right: auto;
+
+    &::before {
+      color: $theme-color-blue;
+    }
+  }
+
+  .slick-dots {
+    bottom: -55px;
+    text-align: left;
+
+    @media only screen and (max-width: 575px) {
+      text-align: center;
+    }
+
+    .slick-active {
+      button::before {
+        color: $theme-color-blue;
+      }
+    }
+
+    button::before {
+      color: #dbdce0;
+      font-size: 36px;
+      opacity: 1;
+    }
+  }
+}
+
+.slider {
+  &__prev,
+  &__next {
+    background-color: transparent;
+    border: 0;
+    color: $theme-color-blue;
+    font-size: 25px;
+
+    @media only screen and (max-width: 575px) {
+      font-size: 20px;
+    }
+  }
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+
+  &__text {
+    margin-bottom: 65px;
+    font-size: 17px;
+    line-height: 1.53;
+    color: rgba($theme-color-secondary, .8);
+
+    @media only screen and (max-width: 575px) {
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: 575px) {
+      justify-content: center;
+    }
+  }
+
+  &__reviewer-logo {
+    max-height: 50px;
+  }
+
+  &__reviewer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media only screen and (max-width: 575px) {
+      align-items: center;
+    }
+  }
+
+  &__reviewer-name {
+    margin-bottom: 4px;
+    font-family: $theme-font-bold;
+    font-size: 20px;
+    color: $theme-color-secondary;
+
+    @media only screen and (max-width: 575px) {
+      font-size: 18px;
+    }
+  }
+
+  &__reviewer-title {
+    font-family: $theme-font-medium;
+    font-size: 17px;
+    color: rgba($theme-color-secondary, .5);
+
+    @media only screen and (max-width: 575px) {
+      font-size: 14px;
+    }
+  }
+
+}

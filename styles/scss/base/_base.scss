@@ -1,0 +1,26 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $theme-font-regular;
+  color: $theme-color-secondary;
+  font-size: 18px;
+  line-height: 1.56;
+
+  @media only screen and (max-width: 575px) {
+    font-size: 14px;
+  }
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: $theme-color-inputPlaceholder;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $theme-color-inputPlaceholder;
+}
+
+::placeholder {
+  color: $theme-color-inputPlaceholder;
+}

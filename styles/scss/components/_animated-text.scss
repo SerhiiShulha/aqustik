@@ -1,0 +1,17 @@
+.animate-text {
+  position: relative;
+
+  &__text {
+    background-color: rgba($theme-color-secondary, .5);
+    color: $theme-color-white;
+  }
+
+  &__cursor {
+    position: absolute;
+    font-family: $theme-font-medium;
+
+    &.inactive {
+      animation: blink .75s ease-in-out infinite;
+    }
+  }
+}

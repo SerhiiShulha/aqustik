@@ -1,0 +1,56 @@
+.button {
+  padding: 17px 45px;
+  background-color: $theme-color-primary;
+  border: 0;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: normal;
+  font-family: $theme-font-semiBold;
+  transition: .2s all;
+
+  &:hover {
+    background-color: darken($theme-color-primary, 10%);
+  }
+
+  &:active {
+    background-color: darken($theme-color-primary, 15%);
+  }
+
+  @media only screen and (max-width: 575px) {
+    padding: 12px 23px;
+  }
+
+  &--secondary {
+    padding: 17px 27px;
+    background-color: transparent;
+    border: 1px solid $theme-color-blue;
+    color: $theme-color-blue;
+
+    &:hover {
+      background-color: $theme-color-blue;
+      color: $theme-color-white;
+    }
+
+    &:active {
+      border-color: darken($theme-color-blue, 10%);
+      background-color: darken($theme-color-blue, 10%);
+    }
+
+    @media only screen and (max-width: 575px) {
+      padding: 12px 23px;
+    }
+  }
+
+  &--link {
+    color: $theme-color-secondary;
+
+    &:hover {
+      color: $theme-color-secondary;
+      text-decoration: none;
+    }
+
+    &:active {
+      color: $theme-color-secondary;
+    }
+  }
+}

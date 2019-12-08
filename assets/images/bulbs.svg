@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="384" height="376" viewBox="0 0 384 376">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#032769" fill-rule="nonzero" d="M178 0h167.56c20.987 0 38 17.013 38 38v86.36a38 38 0 0 1-38 38H236l-39.42 34.7v-34.78H178c-20.987 0-38-17.013-38-38V38c0-20.987 17.013-38 38-38z"/>
+        <path fill="#FFF" d="M207.924 76.429l-9.853 11.141H315.22l9.85-11.141zM208.403 47.429L198.55 58.57h117.148l9.85-11.141z"/>
+        <g fill="#5BE79C">
+            <path d="M208.403 105l-9.853 11.141h58.6L267 105zM273.515 105l-9.853 11.141h10.488L284 105z"/>
+        </g>
+        <g fill-rule="nonzero" transform="translate(0 213)">
+            <path fill="#032769" d="M22.84 0H151.1c12.614 0 22.84 10.226 22.84 22.84v74c0 11.96-9.232 21.89-21.16 22.76l26.44 43.3-69.7-43.26H22.84C10.226 119.64 0 109.414 0 96.8v-74C.022 10.201 10.241 0 22.84 0z"/>
+            <circle cx="89.9" cy="41.88" r="15.18" fill="#FFF"/>
+            <path fill="#FFF" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.52" d="M125.78 92.96H54c0-12.703 10.297-23 23-23h25.78c12.703 0 23 10.297 23 23z"/>
+        </g>
+    </g>
+</svg>

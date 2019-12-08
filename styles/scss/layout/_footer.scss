@@ -1,0 +1,145 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 240px;
+  background-color: $theme-color-secondary;
+
+  @media only screen and (max-width: 575px) {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    height: auto;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 575px) {
+      flex-direction: column;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__logo {
+    margin-bottom: 25px;
+
+    @media only screen and (max-width: 575px) {
+      margin-bottom: 45px;
+      max-width: 150px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    color: #868cc0;
+
+    @media only screen and (max-width: 575px) {
+      font-size: 14px;
+    }
+
+    &--mobile {
+      font-size: 10px;
+    }
+
+    &--block-title {
+      margin-bottom: 15px;
+      font-family: $theme-font-semiBold;
+    }
+  }
+
+  &__contact-container {
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 575px) {
+      flex-direction: column;
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &:not(:last-child) {
+      margin-right: 70px;
+    }
+
+    @media only screen and (max-width: 575px) {
+      margin-bottom: 45px;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    height: 40px;
+
+    .footer__text {
+      color: $theme-color-white;
+      font-family: $theme-font-semiBold;
+    }
+  }
+
+  &__messangers {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  &__social-icons {
+    display: flex;
+    height: 40px;
+  }
+
+  &__social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    color: #868cc0;
+    border: 1px solid #868cc0;
+    border-radius: 4px;
+    transition: .2s all;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    &:hover {
+      color: $theme-color-primary;
+      border-color: $theme-color-primary;
+      text-decoration: none;
+    }
+
+    @media only screen and (max-width: 575px) {
+      width: 34px;
+      height: 34px;
+      font-size: 18px;
+
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+    }
+  }
+
+}
