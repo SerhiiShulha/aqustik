@@ -53,9 +53,10 @@
     display: flex;
     bottom: 40px;
     left: 50%;
+    height: 28px;
+    opacity: .2;
     transform: translateX(-50%);
     color: rgba(255, 255, 255, .2);
-    font-size: 35px;
     animation: bounceUpDown 1.25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 
     @media only screen and (max-width: 575px) {

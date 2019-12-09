@@ -42,17 +42,19 @@
 @keyframes bounceUpDown {
   0% {
     bottom: 40px;
-    color: rgba(255, 255, 255, .2);
+    height: 28px;
+    opacity: .2;
   }
 
   50% {
     bottom: 15px;
-    color: rgba(255, 255, 255, .7);
+    height: 30px;
+    opacity: 1;
   }
 
   100% {
     bottom: 40px;
-    color: rgba(255, 255, 255, .2);
+    height: 28px;
+    opacity: .2;
   }
-
 }
