@@ -42,19 +42,19 @@
 @keyframes bounceUpDown {
   0% {
     bottom: 40px;
-    height: 28px;
+    height: 20px;
     opacity: .2;
   }
 
   50% {
     bottom: 15px;
-    height: 30px;
+    height: 24px;
     opacity: 1;
   }
 
   100% {
     bottom: 40px;
-    height: 28px;
+    height: 20px;
     opacity: .2;
   }
 }
