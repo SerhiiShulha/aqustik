@@ -38,3 +38,21 @@
     transform: translateX(-50%);
   }
 }
+
+@keyframes bounceUpDown {
+  0% {
+    bottom: 40px;
+    color: rgba(255, 255, 255, .2);
+  }
+
+  50% {
+    bottom: 15px;
+    color: rgba(255, 255, 255, .7);
+  }
+
+  100% {
+    bottom: 40px;
+    color: rgba(255, 255, 255, .2);
+  }
+
+}

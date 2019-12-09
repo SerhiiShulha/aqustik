@@ -3923,6 +3923,21 @@ html {
   }
 }
 
+@keyframes bounceUpDown {
+  0% {
+    bottom: 40px;
+    color: rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    bottom: 15px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    bottom: 40px;
+    color: rgba(255, 255, 255, 0.2);
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -3956,8 +3971,9 @@ body {
 
 .header {
   display: flex;
+  position: relative;
   align-items: center;
-  height: 800px;
+  height: 100vh;
   background-color: #0655e7;
   background-image: url("../../../assets/images/headerBg.jpg");
   background-position: center;
@@ -3990,23 +4006,40 @@ body {
 
 @media only screen and (max-width: 575px) {
   .header__title {
-    margin-bottom: 0;
+    margin-bottom: 15px;
     font-size: 22px;
     line-height: 1.36;
   }
 }
 
 .header__subtitle {
-  margin-top: 40px;
+  margin-bottom: 40px;
   font-size: 20px;
   line-height: normal;
 }
 
 @media only screen and (max-width: 575px) {
   .header__subtitle {
-    margin-top: 15px;
+    margin-bottom: 15px;
     font-size: 15px;
     line-height: 1.47;
+  }
+}
+
+.header__arrow {
+  position: absolute;
+  display: flex;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 35px;
+  animation: bounceUpDown 1.25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@media only screen and (max-width: 575px) {
+  .header__arrow {
+    display: none;
   }
 }
 
@@ -4653,7 +4686,7 @@ body {
 
 .slick-slider .slick-dots button::before {
   color: #dbdce0;
-  font-size: 36px;
+  font-size: 10px;
   opacity: 1;
 }
 

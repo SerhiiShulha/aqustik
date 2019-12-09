@@ -1,7 +1,8 @@
 .header {
   display: flex;
+  position: relative;
   align-items: center;
-  height: 800px;
+  height: 100vh;
   background-color: $theme-color-blue;
   background-image: url("../../../assets/images/headerBg.jpg");
   background-position: center;
@@ -29,21 +30,36 @@
     font-family: $theme-font-black;
 
     @media only screen and (max-width: 575px) {
-      margin-bottom: 0;
+      margin-bottom: 15px;
       font-size: 22px;
       line-height: 1.36;
     }
   }
 
   &__subtitle {
-    margin-top: 40px;
+    margin-bottom: 40px;
     font-size: 20px;
     line-height: normal;
 
     @media only screen and (max-width: 575px) {
-      margin-top: 15px;
+      margin-bottom: 15px;
       font-size: 15px;
       line-height: 1.47;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    display: flex;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, .2);
+    font-size: 35px;
+    animation: bounceUpDown 1.25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+
+    @media only screen and (max-width: 575px) {
+      display: none;
     }
   }
 }
