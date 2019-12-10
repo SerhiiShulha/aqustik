@@ -27,6 +27,10 @@ const addText = async (text, container) => {
 };
 
 const removeText = async (text, container) => {
+    if (container.nextElementSibling.classList.contains("inactive")) {
+        container.nextElementSibling.classList.remove("inactive");
+    }
+
     return new Promise (res => {
         let i = 0;
         const intervalRemove = setInterval(() => {
