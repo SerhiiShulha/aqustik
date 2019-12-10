@@ -10,7 +10,7 @@ const navBtn = document.getElementById("nav-btn");
 
 document.addEventListener("DOMContentLoaded", e => {
     navAnimationProcess();
-    textAnimationInit("usable interface.", headerAnimatedText);
+    textAnimationInit(["usable interface.", "second text.", "some super long long long text."], headerAnimatedText);
     keepTilesShape(rectangles);
 
     new WOW().init();
